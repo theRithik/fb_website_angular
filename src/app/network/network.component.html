@@ -1,0 +1,39 @@
+<nav class="navbar bg-body-tertiary bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"style='color:white'>Navbar</a>
+      <form class="d-flex">
+        <a class=" me-2 " routerLink="/home" style="text-decoration: none; color: white;  padding-top: 4px;" >Home</a>
+        <a class="me-2 mr-4" routerLink="/network" style="text-decoration: none; color:red; font-size: 20px;">Network</a>
+        <a class=" me-2 "  routerLink="/friends" style="text-decoration: none; color: white;padding-top: 4px;">Friends</a>
+        <a class="me-2"  routerLink="/settings" style="text-decoration: none; color: white; padding-top: 4px;">Settings</a>
+        <a class=" me-2 "  routerLink="/login" style="text-decoration: none; color: white; padding-top: 4px;" >Logout</a>
+      </form>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col-md-6">
+    <div class="card" style="width:350px; margin-top: 70px;margin-left: 30px; background-color: blanchedalmond;">
+        <div class="card-body">
+          <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="profile picture" style="width: 200px; height:200px; border:1px solid grey; border-radius: 50%;">
+       <hr/>
+       <h4>Connections</h4>
+       <hr/>
+       <h4>Posts</h4>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-6" >
+        <div class="row mt-5" style="border: 1px solid grey; border-radius: 5px; width: 500px; padding: 10px;">
+        <div class="col-md-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="photo" style="width:50px;height: 50px; border:1px solid grey; border-radius: 50%;">
+        </div>
+        <div class="col-md-4" >
+            <h4 style="margin-top: 7px;">Name</h4>
+        </div>
+        <div class="col-md-5">
+            <button class="btn btn-{{color}}" style="margin-left: 50px; margin-top: 7px;" (click)="onSend()">{{send}}</button>
+        </div>
+    </div>
+    </div>
+    </div>
